@@ -1,0 +1,14 @@
+<!--components/navbar/navbar.wxml-->
+<view class='nav-wrap' style='height: {{statusHeight + height}}px;'>
+  <view style='height: {{statusHeight}}px'></view>
+  <view class='nav-container' style='height: {{height}}px'>
+    <view class='nav-title' style='line-height: {{height}}px;height: {{height}}px'>{{options.title}}</view>
+    <view class='nav-capsule' wx:if="{{options.showCapsule}}">
+      <view class='iconfont icon-back capsule-item' wx:if="{{options.back.isShow}}" bindtap='navigateBack'></view>
+      <view class='capsule-line' wx:if='{{!share}}' wx:if="{{options.back.isShow && options.home.isShow}}"></view>
+      <view class='iconfont icon-home capsule-item' wx:if="{{options.home.isShow}}" bindtap='navigateHome'></view>
+    </view>
+  </view>
+</view>
+<!-- fill the height due to fixed position -->
+<view style='height: {{statusHeight + height}}px'></view>

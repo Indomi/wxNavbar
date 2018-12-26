@@ -3,6 +3,8 @@
 小程序顶部导航栏自定义组件
 A navbar component for wechar miniprogram.
 
+![TIM截图20181226150434.png](https://i.loli.net/2018/12/26/5c23284d26049.png)
+
 ## 使用
 
 ### 1. app.json设置
